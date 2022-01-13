@@ -21,7 +21,7 @@ The final project for this class will consist of analysis on a dataset of your o
 The goal is not to do an exhaustive data analysis i.e., do not calculate every statistic and procedure you have learned for every variable, but rather let me know that you are proficient at asking meaningful questions and answering them with results of data analysis, that you are proficient in using R, and that you are proficient at interpreting and presenting the results. Focus on methods that help you begin to answer your research questions. You do not have to apply every statistical procedure we learned (and you can use techniques we haven’t officially covered in class, if you’re feeling adventurous). Also, critique your own methods and provide suggestions for improving your analysis. Issues pertaining to the reliability and validity of your data, and appropriateness of the statistical analysis should be discussed here.
 
 The project is very open ended. You should create some kind of compelling visualization(s) of this data in R.
-There is no limit on what tools or packages you may use, but sticking to packages we learned in class (`tidyverse`) is required.
+There is no limit on what tools or packages you may use, but sticking to packages we learned in class is highly recommended.
 You do not need to visualize all of the data at once.
 A single high quality visualization will receive a much higher grade than a large number of poor quality visualizations.
 Also pay attention to your presentation.
@@ -69,7 +69,7 @@ The final project will consist of three parts:
 2.  Presentation - due Tuesday, May 10/Thursday, May 12
 3.  Written Report - due Tuesday, May 17
 
-### Proposal
+## Proposal
 
 This is a draft of the introduction section of your project as well as a data analysis plan and your dataset. It should include the following sections:
 
@@ -89,7 +89,7 @@ This is a draft of the introduction section of your project as well as a data an
 
 Each section should be no more than 1 page (excluding figures).
 
-### Presentation
+## Presentation
 
 You will prepare a short (10 minues or so, and no longer than 15 minutes) presentation to report your findings during the last week of the semester. 
 You can either present live during your workshop or pre-record and submit your video to be played during class.
@@ -104,7 +104,7 @@ After your presentation, there will be time for questions from the class. You sh
 The order of the presentations will be generated randomly.
 
 
-### Written Report
+## Written Report
 
 
 You should type your final report in R Markdown. Your final product should be turned in as a .pdf file. You should expect your project to be about 6-10 double-spaced pages long.

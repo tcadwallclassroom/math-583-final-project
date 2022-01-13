@@ -1,0 +1,145 @@
+---
+title: "Final Project -- Math 583"
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+date: "*Last updated:* `r Sys.Date()`"
+output:
+  tufte::tufte_html: default
+  tufte::tufte_handout:
+    citation_package: natbib
+    latex_engine: xelatex
+  tufte::tufte_book:
+    citation_package: natbib
+    latex_engine: xelatex
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+library(tufte)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+```
+
+
+
+The final project for this class will consist of analysis on a dataset of your own choosing. The dataset may already exist, or you may collect your own data using a survey or by conducting an experiment. You can choose the data and analysis based on your interests, but it should have a DEI (Diversity, Equity, and Inclusion) aspect. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like) and apply them to a novel dataset in a meaningful way.
+
+The goal is not to do an exhaustive data analysis i.e., do not calculate every statistic and procedure you have learned for every variable, but rather let me know that you are proficient at asking meaningful questions and answering them with results of data analysis, that you are proficient in using R, and that you are proficient at interpreting and presenting the results. Focus on methods that help you begin to answer your research questions. You do not have to apply every statistical procedure we learned (and you can use techniques we haven’t officially covered in class, if you’re feeling adventurous). Also, critique your own methods and provide suggestions for improving your analysis. Issues pertaining to the reliability and validity of your data, and appropriateness of the statistical analysis should be discussed here.
+
+The project is very open ended. You should create some kind of compelling visualization(s) of this data in R.
+There is no limit on what tools or packages you may use, but sticking to packages we learned in class (`tidyverse`) is required.
+You do not need to visualize all of the data at once.
+A single high quality visualization will receive a much higher grade than a large number of poor quality visualizations.
+Also pay attention to your presentation.
+Neatness, coherency, and clarity will count.
+All analyses must be done in RStudio, using R.
+
+You should begin your project as soon as possible, especially choosing a question and identifying possible sources of data. You should also read existing literature on your question. By the end of the course, you will have learned many statistical techniques that you can apply to your project.
+
+## Data
+
+In order for you to have the greatest chance of success with this project it is important that you choose a manageable dataset.
+This means that the data should be readily accessible and large enough that multiple relationships can be explored.
+As such, your dataset must have at least 50 observations and between 10 to 20 variables (exceptions can be made but you must speak with me first).
+The dataset's variables should include categorical variables, discrete numerical variables, and continuous numerical variables.
+
+If you are using a dataset that comes in a format that we haven't encountered in class, make sure that you are able to load it into R as this can be tricky depending on the source.
+If you are having trouble ask for help before it is too late.
+
+**Note on reusing datasets from class:** Do not reuse datasets used in examples, homework assignments, or labs in the class.
+
+Below are a list of data repositories that might be of interest to browse.
+You're not limited to these resources, and in fact, you're encouraged to venture beyond them.
+But you might find something interesting there:
+
+-   [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
+-   [NHS Scotland Open Data](https://www.opendata.nhs.scot/)
+-   [Edinburgh Open Data](https://edinburghopendata.info/)
+-   [Open access to Scotland's official statistics](https://statistics.gov.scot/home)
+-   [Bikeshare data portal](https://www.bikeshare.com/data/)
+-   [UK Gov Data](https://data.gov.uk/)
+-   [Kaggle datasets](https://www.kaggle.com/datasets)
+-   [OpenIntro datasets](http://openintrostat.github.io/openintro/)
+-   [Awesome public datasets](https://github.com/awesomedata/awesome-public-datasets)
+-   [Youth Risk Behavior Surveillance System (YRBSS)](https://chronicdata.cdc.gov/Youth-Risk-Behaviors/DASH-Youth-Risk-Behavior-Surveillance-System-YRBSS/q6p7-56au)
+-   [PRISM Data Archive Project](https://www.icpsr.umich.edu/icpsrweb/content/ICPSR/fenway.html)
+-   [Harvard Dataverse](https://dataverse.harvard.edu/)
+-   [The Covid Tracking Project](https://covidtracking.com/analysis-updates/federal-covid-data-101-how-to-find-data)
+-   If you know of others, let me know, and I'll add here...
+
+## Deliverables
+
+The final project will consist of three parts:
+
+1.  Proposal - due Thursday, April 7
+2.  Presentation - due Tuesday, May 10/Thursday, May 12
+3.  Written Report - due Tuesday, May 17
+
+### Proposal
+
+This is a draft of the introduction section of your project as well as a data analysis plan and your dataset. It should include the following sections:
+
+1.  *Introduction:* The introduction should introduce your general
+    research question and your data (where it came from, how it was collected,
+    what are the cases, what are the variables, etc.).
+2.  *Data:* Briefly describe your dataset, including how you obtained it.
+    Then print out the output of `glimpse()` or `skim()` of your data frame.
+3.  *Data analysis plan:*
+    -   The outcome (response, Y) and predictor (explanatory, X) variables you will use to answer your question.
+    -   The comparison groups you will use, if applicable.
+    -   Very preliminary exploratory data analysis, including some summary statistics and visualizations, along with some explanation on how they help you learn more about your data.
+        (You can add to these later as you work on your project.)
+    -   The method(s) that you believe will be useful in answering your question(s).
+        (You can update these later as you work on your project.)
+    -   What results from these specific statistical methods are needed to support your hypothesized answer?
+
+Each section should be no more than 1 page (excluding figures).
+
+### Presentation
+
+You will prepare a short (10 minues or so, and no longer than 15 minutes) presentation to report your findings during the last week of the semester. 
+You can either present live during your workshop or pre-record and submit your video to be played during class.
+
+You should created presentation slides, preferably using R Markdown to create PDF presentation slides.
+Your presentation should not just be an account of everything you tried, but it should convey what choices you made, and why, and what you found.
+
+Before you finalize your presentation, make sure your chunks are turned off with `echo = FALSE`.
+
+After your presentation, there will be time for questions from the class. You should be prepared to answer any questions (and you should be thinking of questions for your classmates while they give their presentations!) After the presentations, you will provide feedback to the other students in this class in the form of peer evaluations.
+
+The order of the presentations will be generated randomly.
+
+
+### Written Report
+
+
+You should type your final report in R Markdown. Your final product should be turned in as a .pdf file. You should expect your project to be about 6-10 double-spaced pages long.
+
+1. *Abstract:* A brief summary (100 - 250 words ) of research appears at the front. This should state the purpose of research and its main findings.
+1. *Introduction:* Describe the purpose of research, and possibly the previous work the research builds on, including:
+    * justifying why the research needed.
+    * summarizing the literature on previous work in this area.
+    * listing the objectives of the study.
+1. *Research Question:* Succinctly state the question that your study will  answer (or attempt to answer).
+1. *Methods:*  Describe the conduct of the study, including how the data were collected, the study population, sampling frame, criteria for inclusion and exclusion, and the method for selecting study subjects. If using a secondary data source, try to describe the data collection methods as accurately as possible. Briefly describe the statistical tests and software used to do the analysis.
+1. *Results:* For studies involving people the results are often presented in the following order.
+    * Descriptive data: study population described according to demographic/socioeconomic variables such as age, income, education, health status, etc.
+    * Crude (unadjusted) measures of association: coefficients from univariate models, comparisons of group means by t-tests, etc.
+    * Stratified analyses and simple methods of adjustment: For example, separate relative risks, t-tests, etc. by racial group.
+    * More complicated analyses with multivariate models: linear regression, logistic regression, etc.
+
+        Analogous presentations of results would be made for other types of studies. Tables and figures should be included throughout this section.
+1. *Discussion:* This section interprets the results and explains the implications and limitations. Often (but not always) this involves the following in this order:
+    a. A brief summary of the findings.
+    a. A short review of the literature, contrasting with the study findings 
+    a. Discussion of strengths and limitations of the study.
+    a. Implications for policy. What impact could these findings have on the way things are done now? 
+    a. Suggestions for future studies. Could shortcomings of this study be improved on in future research.
+1. *References:* Cite your references using a standard format. Any style (such as APA, etc.) will do, but be consistent.
+1. *Appendix:* Attach a copy of the R code used to do the data analysis here. Do not include the code chunks within the main body of the report, instead the code should be included here.
+
+*This project is based, in part, on material by Mine Cetinkaya-Rundel used under a CC-BY-SA 4.0 licence.*

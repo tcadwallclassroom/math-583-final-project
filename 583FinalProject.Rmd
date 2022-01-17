@@ -93,7 +93,7 @@ Each section should be no more than 1 page (excluding figures).
 
 ## Presentation
 
-You will prepare a short (10 minues or so, and no longer than 15 minutes) presentation to report your findings during the last week of the semester. 
+You will prepare a short (10 minutes or so, and no longer than 15 minutes) presentation to report your findings during the last week of the semester. 
 You can either present live during your workshop or pre-record and submit your video to be played during class.
 
 You should created presentation slides, preferably using R Markdown to create PDF presentation slides.

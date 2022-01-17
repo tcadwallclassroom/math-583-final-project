@@ -77,7 +77,7 @@ This is a draft of the introduction section of your project as well as a data an
     research question and your data (where it came from, how it was collected,
     what are the cases, what are the variables, etc.).
 2.  *Data:* Briefly describe your dataset, including how you obtained it.
-    Then print out the output of `glimpse()` or `skim()` of your data frame.
+    Then print out the output of `glimpse()` of your data frame.
 3.  *Data analysis plan:*
     -   The outcome (response, Y) and predictor (explanatory, X) variables you will use to answer your question.
     -   The comparison groups you will use, if applicable.
